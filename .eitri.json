@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "standard": "VHDL 2008",
+  "exclude": [],
+  "libraries": {},
+  "targets": [
+    {
+      "name": "ALU_64Bits_TB",
+      "kind": "circuit",
+      "entity": "ALU_64Bits_TB",
+      "path": "ALU_64Bits_TB.vhd",
+      "library": "work",
+      "architecture": "Behavioral",
+      "generics": {},
+      "stop_time": "200ns",
+      "wave_format": "VCD",
+      "circuit_detail": "Simple",
+      "signals": null
+    },
+    {
+      "name": "ALU_64Bits",
+      "kind": "circuit",
+      "entity": "ALU_64Bits",
+      "path": "ALU_64Bits.vhd",
+      "library": "work",
+      "architecture": "Behavioral",
+      "generics": {},
+      "stop_time": "200ns",
+      "wave_format": "VCD",
+      "circuit_detail": "Simple",
+      "signals": null
+    },
+    {
+      "name": "ALU_64Bits_TB",
+      "kind": "simulation",
+      "entity": "ALU_64Bits_TB",
+      "path": "ALU_64Bits_TB.vhd",
+      "library": "work",
+      "architecture": "Behavioral",
+      "generics": {},
+      "stop_time": "200ns",
+      "wave_format": "VCD",
+      "circuit_detail": "Simple",
+      "signals": [
+        "alu_64bits_tb.reg_a_sig[63:0]",
+        "alu_64bits_tb.reg_b_sig[63:0]",
+        "alu_64bits_tb.op_sel_sig[3:0]",
+        "alu_64bits_tb.carry_in_sig",
+        "alu_64bits_tb.alu_out_sig[63:0]",
+        "alu_64bits_tb.carry_out_sig"
+      ]
+    },
+    {
+      "name": "ALU_Top_TB",
+      "kind": "simulation",
+      "entity": "ALU_Top_TB",
+      "path": "ALU_Top_TB.vhd",
+      "library": "work",
+      "architecture": "Behavioral",
+      "generics": {},
+      "stop_time": "60ns",
+      "wave_format": "VCD",
+      "circuit_detail": "Simple",
+      "signals": [
+        "alu_top_tb.reg_a_sig[63:0]",
+        "alu_top_tb.reg_b_sig[63:0]",
+        "alu_top_tb.carry_in_sig",
+        "alu_top_tb.opcode_sig[6:0]",
+        "alu_top_tb.funct3_sig[2:0]",
+        "alu_top_tb.funct7_sig[6:0]",
+        "alu_top_tb.op_sel_sig[3:0]",
+        "alu_top_tb.alu_out_sig[63:0]",
+        "alu_top_tb.carry_out_sig"
+      ]
+    }
+  ],
+  "selected_circuit": "ALU_64Bits",
+  "active_file": "ALU_Top_TB.vhd",
+  "selected_simulation": "ALU_Top_TB"
+}
